@@ -4,11 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
   </head>
   <body>
     <header>
-      <section class="bg-[#0070A0] flex item-center justify-center py-4">
-        <span class="flex text-white gap-2">
+      <section class="bg-[#0070A0] flex item-center justify-center py-4 sm:text-[16px] text-[10px]">
+        <span class="flex text-white gap-2 flex-col sm:flex-row~ items-center">
           <p>A Webflow template for SaaS products.</p>
           <a
             href="#"
@@ -18,12 +22,12 @@
           </a>
         </span>
       </section>
-      <nav class="flex justify-between px-[150px] py-[25px] items-center">
+      <nav class="flex justify-between   items-center md:px-[150px] md:py-[25px] px-[35px] py-[15px]">
         <div class="flex items-center gap-8">
           <a href="#">
             <img src="src/pic/IMAGE.png" alt="img" />
           </a>
-          <ul class="flex items-center gap-8">
+          <ul class="flex items-center gap-8 lg:flex hidden">
             <li>
               <a
                 href="#"
@@ -55,8 +59,11 @@
           </ul>
         </div>
         <div class="flex gap-8">
-          <a href="#" class="text-blue-500">Sign in</a>
-          <a href="#" class="text-white bg-blue-500 py-1 px-5">Book a demo</a>
+          <a href="#" class="text-blue-500 md:block hidden">Sign in</a>
+          <a href="#" class="text-white bg-blue-500 py-1 px-5 md:block hidden">Book a demo</a>
+          <button class="lg:hidden blok">
+            <i class="fa fa-bars text-3xl"></i>
+          </button>
         </div>
       </nav>
     </header>
